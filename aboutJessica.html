@@ -27,13 +27,20 @@
 <body style="background-color: paleturquoise;">
     <h1 style="text-align:center;color:darkcyan;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"> Hey guys- my name is Jessica and this is some information about me</h1>
     <br>
-   <h3 style=color:cornflowerblue bordercolor="#2f6ac2" id="demo" onclick="javas">I'm a senior at Oakland Technical Highschool and I've been going here since freshman year. I've been interested in the topic of dreams for as long as I can remember. I've always had crazy dreams containing random people, places, and situations. These whimsical dreams led me to my capstone question: <I><u>"What is the relationship between dreams and subconcious feelings of stress?     Click to see a special message"</u></I> </h3>
+   <h3 style=color:cornflowerblue bordercolor="#2f6ac2" id="demo" onclick="javas()">I'm a senior at Oakland Technical Highschool and I've been going here since freshman year. I've been interested in the topic of dreams for as long as I can remember. I've always had crazy dreams containing random people, places, and situations. These whimsical dreams led me to my capstone question: <I><u>"What is the relationship between dreams and subconcious feelings of stress?     Click to see a special message"</u></I> </h3>
    <script>
     function javas()
     {
-  document.getElementById("demo").innerHTML = "Thanks for reading!"
-  document.getElementById('demo').style.color="pink";
+  document.getElementById("demo").innerHTML = "Thanks for reading!";
+  document.getElementById('demo').style.color="magenta";
 }
+</script>
+<script>
+  myInterval = setInterval(setColor, 2000);
+  function setColor() {
+    let x = document.body
+    x.style.backgroundColor = x.style.backgroundColor == "paleturquoise" ? "rgb(253,224,245)" : "rgb(229,204,255)"
+  }
    </script>
    <div class="text-center">
     <img src="IMG_8710.jpg" style="width: 450px">
